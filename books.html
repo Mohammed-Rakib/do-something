@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book List</title>
+    <!-- font awesome-cdn -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- custom css file path link -->
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- bootstrap css file path -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+
+<body class="bg-dark text-light">
+    <header>
+        <h1 class="header-title text-center my-5"><span class="mx-1"><i class="fas fa-book-open"></i></span>Favorite
+            Books List</h1>
+    </header>
+    <!-- main part -->
+    <main class="container  px-5 ">
+        <!-- get input from users -->
+        <div class="row">
+            <div class="col-md-6 col-12">
+                <div id="form-container">
+                    <div class="mb-3">
+                        <label for="book-title" class="form-label">(Book) Title/Name</label>
+                        <input type="text" class="form-control" id="book-title" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="book-author" class="form-label">(Book) Author</label>
+                        <input type="text" class="form-control" id="book-author" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="book-year" class="form-label">Published (Year)</label>
+                        <input type="number" class="form-control" id="book-published-year" aria-describedby="emailHelp">
+                    </div>
+                </div>
+                <button onclick="saveToFavorite()" class="btn btn-large btn-outline-light w-100" type="button">Add
+                    Favorite
+                    List</button>
+            </div>
+            <!-- show books  -->
+            <div class="col-md-6 col-12">
+                <table id="table" class="table table-dark w-100">
+                    <thead class=" mx-auto">
+                        <tr>
+                            <th scope="col">Book Title/Name</th>
+                            <th scope="col">Book Author</th>
+                            <th scope="col">Published Year</th>
+                        </tr>
+                    </thead>
+                    <tbody class=" mx-auto" id="book-information">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <!-- javaScript file link -->
+    <script src="js/book.js"></script>
+    <!-- bootstrap.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

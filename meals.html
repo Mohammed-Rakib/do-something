@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get your Mead</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- custom css link -->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body class="bg-dark text-light">
+    <header>
+        <h1 class="my-5 text-center">Let's get (some) <span class="text-danger"> Food!!</span></h1>
+    </header>
+    <main class="container">
+        <!-- user input -->
+        <p id="warning-text" class="w-50 mx-auto text-danger">Invalid input. Please write a valid one!</p>
+        <div class="user-input w-50 mx-auto d-flex">
+            <input id="meal-input" type="text" class="form-control" placeholder="search for your meal">
+            <button onclick="getSearchedMeals()" class="btn btn-danger">Search</button>
+        </div>
+        <!-- display meals -->
+        <div id="display-meals" class="row mt-5 ">
+
+        </div>
+    </main>
+
+
+    <!-- bootstrap.js   -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <script src="js/meals.js"></script>
+</body>
+
+</html>

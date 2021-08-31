@@ -1,0 +1,13 @@
+.fa-book-open {
+    color: tomato;
+}
+#table {
+    display: none;
+    width: 100%;
+}
+tr{
+    width: 100%;
+}
+#warning-text {
+    display: none;
+}
